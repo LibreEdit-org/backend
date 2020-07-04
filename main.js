@@ -102,15 +102,6 @@ function getFile(callback) {
 
 // Proxy Clip generator, creates a smaller clip that is easier
 // on the cpu to work with.
-// Ex:
-// generateProxyClip({
-// 	video: media[0].element,
-// 	fps: 1/30,
-// 	resolution: [480, 320],
-// 	playbackRate: 2,
-// },
-// function(time) {console.log(time)},
-// function(proxy, time) {});
 function generateProxyClip(proxy, loop, callback) {
 	proxy.frames = [];
 
